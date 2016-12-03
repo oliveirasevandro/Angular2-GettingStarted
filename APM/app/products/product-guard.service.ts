@@ -1,10 +1,10 @@
-import {CanActivate, ActivatedRoute, ActivatedRouteSnapshot, Router} from "@angular/router";
-import {Inject} from "@angular/core";
+import {CanActivate, ActivatedRouteSnapshot, Router} from "@angular/router";
+import {Injectable} from "@angular/core";
 /**
  * Created by eso on 02/12/16.
  */
 
-@Inject()
+@Injectable()
 export class ProductDetailGuard implements CanActivate {
 
     constructor(private _router: Router) {
